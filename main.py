@@ -26,7 +26,7 @@ def download(file_name: str):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--port", help="spcify flask port", default=5000, type=int)
+    parser.add_argument('-p', "--port", help="spcify flask port", default=5000, type=int)
     parser.add_argument('-d', "--dir", help="directory where file locate", required=True)
     args = parser.parse_args()
 
